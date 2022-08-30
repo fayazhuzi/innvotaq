@@ -1,0 +1,25 @@
+<app-header></app-header>
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+        <div>
+            <button mat-button class="menu-button">
+                <span>Home</span>
+            </button>
+        </div>
+        <div>
+            <button mat-button class="menu-button" routerLink="./users">
+                <span>Users</span>
+            </button>
+        </div>
+        <div>
+            <button mat-button class="menu-button" routerLink="./details">
+                <span>Blogs</span>
+            </button>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
